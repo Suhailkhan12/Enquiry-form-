@@ -1,0 +1,42 @@
+.main{max-width: 500px;height: 1000px;background: white;margin: auto;margin-top: 50px;
+}
+.r1{width: 500px;height: 100px;font-size: 50px;font-family:'Alkatra', cursive; color: RGB(149, 82, 81);text-align: left;
+}
+
+
+.r2{width: 500px;height: 250px;background: white;}.r2c1{width: 100px;height: 250px;
+background: white;float: left;}
+
+.r2c2{width: 400px;height: 250px;background: white;float: left;
+}
+
+input[type=text] {width: 400px;height: 40px;border: none;border-bottom: 2px solid rgba(121, 112, 112,60);
+font-family: 'Times New Roman', Times, serif;font-size: 30px;color: rgb(88, 85, 85);}
+
+input[type=email] {width: 400px;height: 40px;border: none;border-bottom: 2px solid rgba(121, 112, 112,60);font-family: 'Times New Roman', Times, serif;
+font-size: 30px;color: rgb(88, 85, 85);}
+
+input[type=tel] {width: 400px;height: 40px;border: none;border-bottom: 2px solid rgba(121, 112, 112,60);font-family: 'Times New Roman', Times, serif;font-size: 30px;
+color: rgb(88, 85, 85);}
+
+.r2c2main{width: 400px;height: 50px;background: white;}.r3{width: 500px;height: 50px;text-align: center;color: aqua;font-style: italic;}
+
+.r4{width: 500px;height: 50px;text-align: center;
+}
+
+input[type=submit] { width: 100px;height: 20px;font-family: 'Times New Roman', Times, serif;font-size: 10px;
+text-align: center;}
+
+.r4c2{width: 400px;height: 50px;background: white;float: left;}.r4c1{width: 100px;
+height: 50px;background: white;float: left;}
+
+
+textarea{width: 400px;height: 40px;border: none;border-bottom: 2px solid rgba(121, 112, 112,60);font-family: 'Times New Roman', Times, serif;font-size: 30px;
+color: rgb(88, 85, 85);}
+
+
+.button {
+  background-color: RGB(181, 101, 167); border: 1px solid rgb(107, 91, 149);border-radius: 10px;color: black;padding: 15px 32px;
+text-align: center;text-decoration: none;font-family: 'Times New Roman', Times, serif;display: inline-block;font-size: 16px;margin: 4px 2px;cursor: pointer;box-shadow: 4px 4px 10px black;}
+
+.button:hover {transform: scale(1.02);}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Form</title>
+	<link rel="stylesheet" type="text/css" href="static/form.css">
+	<link href="static/cssimage/favicon.ico" rel="icon">
+</head>
+<body>
+	<form onsubmit="sendEmail(); reset(); return false;" method="post">
+		<div class="main"><!-- main -->
+			<div class="r1">
+				Enquiry Form
+			</div>
+			<div class="r2">
+				<div class="r2c2">
+					<div class="r2c2main">
+						<input type="text" name="name" id="name" placeholder="Full Name" required=""/>
+					</div>
+					<div class="r2c2main">
+						<input type="email" id="email" name="email" placeholder="Email.." required=""/>
+					</div>
+					<div class="r2c2main">
+						<input type="tel" name="contact" id="contact" placeholder="Number" required=""/>
+					</div>
+					<div class="r2c2main">
+						<textarea name="Enquiry" id="Enquiry" rows="1"  placeholder="Message" required=""></textarea>
+					</div>
+				</div>
+			</div>
+			<div class="r4">
+				<div class=r4c2>
+					<button class="button" type="submit"> Submit </button>
+				</div>
+			</div>
+		</div>		
+	</form>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
+	<script>
+		function sendEmail(){
+		let name = document.getElementById("name").value;
+		let email = document.getElementById("email").value;
+		let contact = document.getElementById("contact").value;
+		let message = document.getElementById("Enquiry").value;
+
+				Email.send({
+					SecureToken: "ba205e84-dc71-47c5-b1f8-30a0687acc16",
+				    To : 'ReceiverEmail',
+				    From : "SenderEmail",
+				    Subject : "New Enquiry",
+				    Body : "Name: " +name+ "<br/> User Email: " +email+ "<br/> Contact: " +contact+ "<br/> Message: " +message
+				}).then(
+				  message => alert(message)
+				);
+		}
+	</script>
+</body>
+</html>
